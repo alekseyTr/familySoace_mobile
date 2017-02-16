@@ -1,0 +1,473 @@
+@media all and (max-width: 1000px) {
+
+    /* ARC MAIN PAGE */
+    /* TODO: add specific class for block */
+    #column-content .block-simple > .sections {
+        margin: 5rem 0;
+    }
+    #column-content .block-simple > .sections li a {
+        font-size: 1.4rem;
+    }
+    #column-content .block-simple > .sections li a .image {
+        margin: 0 auto;
+    }
+    #column-content .block-simple > .sections li a .title {
+        line-height: 1.3;
+        margin: 15px 10px;
+        text-align: center;
+    }
+    /* - instruction block */
+    #column-content .instruction-block .instruction {
+        width: 99%;
+    }
+    #column-content .instruction-block .instruction-arrow {
+        margin-left: 99%;
+    }
+    /* -  archives-new */
+    #column-content #block-archives-new {
+        width: auto;
+    }
+
+    /* CATALOG */
+
+    /* Tabs */
+    #menu-tabs {
+        width: 100%;
+    }
+    #menu-tabs li.menu-item {
+        width: 33.3333%;
+        height: 45px;
+        margin: 0;
+    }
+    #menu-tabs li .menu-item {
+        font-size: 1.5rem;
+        line-height: 45px;
+        height: 45px;
+        text-align: center;
+    }
+    #menu-tabs li.current .menu-item {
+        line-height: 34px;
+    }
+
+    /* Search */
+    #block-search-form-common {
+        margin: 2rem 0 1rem 0;
+    }
+    #block-search-form-common td:first-child {
+        width: 75%;
+    }
+    #block-search-form-common #search-form-text {
+        width: 95%;
+        padding: 15px 15px 15px 5px;
+        border-radius: 3px;
+    }
+    /* TODO: in one line button and form */
+    #block-search-form-common #search-button-wrapper .form-button {
+        width: 100%;
+        height: 50px;
+        background-size: 100%;
+        font-size: 2rem;
+    }
+    #block-search-form-common #search-form-text {
+        background-size: 29px;
+    }
+    /* Alphabet */
+    .block-simple .alphabet {
+        margin: 3.5rem 0;
+    }
+    .block-simple .alphabet .letters {
+        text-align: center;
+    }
+    /* Pager */
+    .pager .page,
+    .pager ul li {
+        padding: 8px;
+    }
+    .pager ul li.active {
+        padding: 8px;
+    }
+    .pager .title {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    /* archive pager */
+    #column-content .pager {
+        margin: 1.5em 0;
+    }
+    #column-content .pager .pages {
+        width: 65%;
+    }
+    #column-content .pager .goto {
+        width: 35%;
+    }
+    #column-content .pager .goto .form-button-small {
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.5rem;
+    }
+    #column-content .pager .goto #field_middle_name {
+        width: 60px !important;
+        height: 38px;
+        line-height: 38px;
+        font-size: 1.5rem;
+        text-align: center;
+        border-radius: 3px;
+    }
+
+    /* View for surname  */
+    /* - archive preview */
+    /* TODO:  check for table view */
+    ul.arc_preview li.col6 {
+        width: 20%;
+    }
+    #column-content .block-simple .button {
+        display: block;
+        width: 300px;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        background-size: 2%;
+    }
+    /*  TODO: block with ads (remove table ) */
+    /* - names and zodiac block (for name and surname pages) */
+    #column-content #names-block,
+    #column-content #zodiac-block,
+    #column-content #block-frequently-lastnames,
+    #column-content #block-zodiacs {
+        float: none;
+        width: 100%;
+        margin: 3rem 0;
+        text-align: center;
+    }
+    #column-content #names-block:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    #column-content #names-block,
+    #column-content #block-frequently-lastnames {
+        font-size: 1.5rem;
+    }
+    #column-content #names-block h2 {
+        margin-bottom: 3rem;
+    }
+    #column-content #names-block h3,
+    #column-content #block-frequently-lastnames h2,
+    #column-content #block-zodiacs h2 {
+        font-size: 1.6rem;
+    }
+    #column-content #block-frequently-lastnames h2,
+    #column-content #block-zodiacs h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    #column-content #names-block ul li,
+    #column-content #block-frequently-lastnames ul li {
+        list-style: none;
+        padding: 5px 0;
+    }
+    #column-content #zodiac-signs {
+        margin: 20px 0 0 0;
+    }
+    #column-content #zodiac-signs li {
+        margin: 0;
+        width: 33%;
+    }
+    #column-content #zodiac-signs img {
+        margin: 0 auto 15px auto;
+    }
+    /* Comments block */
+    #column-content .block-comments,
+    #column-content .post-reply-form {
+        max-width: 100%;
+    }
+    #column-content .block-comments .comment,
+    .comment-reply .reply-title,
+    .comment-reply textarea {
+        font-size: 1.5rem;
+    }
+    .comment-reply textarea {
+        padding: 10px;
+    }
+    .form-button {
+        background-size: 2%;
+    }
+    .form-button-small {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 50px;
+        font-size: 1.7rem;
+    }
+    #column-content .post-reply-form textarea {
+        line-height: 25px;
+    }
+    /* Additional blocks: also watch, names, similar-lastames */
+    #also-watch,
+    #names,
+    #similar-lastnames {
+        font-size: 1.6rem;
+        list-style: none;
+    }
+
+    /* Names page */
+    /* - form */
+    #column-content form[name='onom_search'] table {
+        width: 100%;
+        margin: 2.5rem 0;
+    }
+    #column-content form[name='onom_search'] table td:first-child {
+        width: 6%;
+        font-size: 1.6rem;
+    }
+    #column-content form[name='onom_search'] table td:nth-child(2) {
+        width: 70%;
+    }
+    #column-content form[name='onom_search'] table td:nth-child(2) input {
+        width: 98% !important;
+        line-height: 48px;
+        border-radius: 3px;
+    }
+    /* - names */
+    .names-block {
+        width: 50%;
+        margin-bottom: 4rem;
+    }
+    .names-block ul li {
+        width: 15px;
+        padding: 6px;
+    }
+    #column-content .names li {
+        width: 25%;
+    }
+    /* View for name */
+    #name_lib ul {
+        padding-right: 15px;
+    }
+    /* legend */
+    table.gray_table {
+        width: 100%;
+    }
+
+    /* Archive page */
+    /* - form */
+    #block-search-substring #search-substring-wrapper {
+        margin-top: 2rem;
+    }
+    #block-search-substring #search-substring-text {
+        line-height: 40px;
+        font-size: 15px;
+    }
+    table.arc_preview.with-name,
+    ul.with-name.arc_preview {
+        width: 95%;
+        margin-left: 5%;
+    }
+    ul.with-name.arc_preview .archive_preview .archive_name{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    #column-content .block-simple .group_name {
+        float: none;
+        width: 100%;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    /* Archive - single page */
+    /* - column right */
+    #column-right #block-recommend .arc_preview li {
+        width: 25%;
+    }
+    #column-right #block-send-page .form {
+        max-width: 100%;
+    }
+    #column-right #block-send-page .form .sector {
+        margin-bottom: 0;
+    }
+    #column-right #block-send-page .sector-content {
+        border-top: 0;
+    }
+    #column-right #block-send-page .sector-content .field:not(.field-hidden) {
+        width: 32%;
+        display: inline-block;
+    }
+    #column-right #block-send-page .sector-content .field-title {
+        width: 100%;
+        margin-bottom: .8rem;
+    }
+    #column-right #block-send-page .sector-content .field-values {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #column-right #block-send-page .sector-content .field-values input {
+        height: 38px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #column-right #block-send-page .sector-form-footer {
+        text-align: center;
+    }
+    #column-right #block-send-page .sector-form-footer .form-button {
+        height: 45px;
+        font-size: 1.6rem;
+        width: 100%;
+    }
+    #block-likes-center {
+        height: auto;
+    }
+
+    /* Regions page */
+    /* - right column */
+    #column-right #block-select-region .block-content li{
+        display: inline-block;
+        width: 50%;
+        line-height: 24px;
+    }
+
+    /* Gosarchive */
+    /* - info */
+    #column-content .block-simple .item-title {
+        float: none;
+        text-align: left;
+    }
+    #column-content .block-simple .item-text {
+        margin-left: 0;
+    }
+    /* - webinars ads */
+    #column-content #block-webinars li,
+    #column-content #block-recomend-groups li {
+        width: 50%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+    #block-webinars li img,
+    #block-recomend-groups li img {
+        margin: 0 auto 5px auto;
+    }
+}
+@media all and (max-width: 550px) {
+    /* Names page */
+    .names-block {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+}
+/* Small device */
+@media all and (max-width: 425px) {
+
+    /* Tabs */
+    #menu-tabs {
+        float: none;
+    }
+    #menu-tabs li.menu-item {
+        width: 100%;
+        height: 50px;
+    }
+    #menu-tabs li .menu-item {
+        float: none;
+        line-height: 50px;
+        height: 50px;
+        border-radius: 0;
+    }
+    #menu-tabs li.current .menu-item {
+        line-height: 50px;
+        height: 50px;
+        border-bottom: 1px solid #d6dee2;
+        box-sizing: border-box;
+    }
+
+    /* Catalog - view for surname */
+    ul.arc_preview li.col6 {
+        width: 33%;
+    }
+    #column-content .block-simple .button {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .post-reply-form textarea {
+        width: 97%;
+    }
+    #names.brief {
+        height: 75px;
+    }
+    #names .name {
+        width: 50%;
+        height: 25px;
+    }
+    /* Names page*/
+    #column-content .names li {
+        width: 50%;
+    }
+    /* Archive page */
+    table.arc_preview.with-name,
+    ul.with-name.arc_preview {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+    table.arc_preview td.col3,
+    ul.arc_preview li.col3 {
+        width: 50%;
+    }
+    /* archive right-column */
+    #column-right #block-recommend .arc_preview li {
+        width: 50%;
+    }
+    #column-right #block-send-page .sector-content .field:not(.field-hidden) {
+        width: 100%;
+    }
+    /* pager */
+    #column-content .pager .pages,
+    #column-content .pager .goto {
+        width: 100%;
+    }
+    /* Photo  */
+    #photo_preview .photos-photo {
+        width: 100%;
+    }
+    #photo_preview .photos-photo img {
+        max-width: 100%;
+    }
+    /* - webinars ads */
+    #column-content #block-webinars li,
+    #column-content #block-recomend-groups li {
+        width: 100%;
+    }
+    /* ARC main page */
+    #column-content .block-simple > .sections li {
+        width: 48%;
+        float: none;
+        display: inline-block;
+    }
+    /* - instruction block */
+    #column-content .instruction-block .instruction {
+        /*padding: 12px;*/
+    }
+    #column-content .instruction-block .instruction .instruction-arrow {
+        background-size: 74%;
+    }
+    #column-content .instruction-block .instruction .link {
+        /*padding: 37px 37px 37px 5px;*/
+        padding-left: 10px;
+        padding-right: 100px;
+        font-size: 12px;
+        line-height: 20px;
+        background-size: 21%;
+    }
+    #column-content #block-lastnames-new {
+        width: auto;
+        float: none;
+        margin: 0;
+    }
+    #column-content #block-lastnames-new ul li {
+        display: inline-block;
+        width: 49%;
+    }
+}
+/* Extra small device */
+@media all and (max-width: 375px) {
+    /* instruction block */
+    #column-content .block-simple > .sections li {
+        width: 100%;
+    }
+}

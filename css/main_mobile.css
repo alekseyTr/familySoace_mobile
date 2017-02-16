@@ -1,0 +1,19 @@
+/* Tablet */
+@media all and (max-width: 1000px){
+    /*Hide theme widget*/
+    #block-theme-change-new {
+        display: none;
+    }
+}
+/* Phablet */
+@media all and (max-width: 550px){
+
+}
+/* Small device */
+@media all and (max-width: 425px){
+
+}
+/* Extra small */
+@media all and (max-width: 375px){
+
+}

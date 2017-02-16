@@ -1,0 +1,626 @@
+@media all and (max-width: 1000px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    /* COMMON */
+
+    #wrapper,
+    .fixed-width {
+        width: 100%;
+        min-width: 100%;
+        /*overflow: hidden;*/
+    }
+    /* Column wrapper */
+    #columns-wrapper {
+        padding: 20px;
+    }
+    /* Right column */
+    #column-right {
+        float: none;
+        width: 100%;
+    }
+    .block-blue .block-wrapper {
+        padding: 3rem .5rem;
+    }
+    /* TODO: ads in right column */
+
+    /* Center column */
+    .with-right-column #column-center-left-wrapper {
+        margin-right: 0;
+    }
+    /* Column center with left column */
+    /* - left column */
+    #column-center-left-wrapper #column-left {
+        float: none;
+        width: 100%;
+    }
+    /* - column-center-left */
+    #column-center-left-wrapper #column-center-left {
+        float: none;
+    }
+    /* - column content */
+    #column-center-left-wrapper #column-content {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+    /* Banners */
+    /* - right banners */
+    #column-right [id^="block-banner-right"],
+    #column-right [id^="block-teasers"] {
+        display: none;
+    }
+
+    /* TYPOGRAPHY */
+
+    /* - text */
+    #column-content .block-simple .content-content,
+    #column-content .block-content .content-content,
+    #column-content .block-simple p,
+    #column-content .block-simple .item-title,
+    #column-content #name_lib.show-controls {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+    /* -link */
+    #column-content .block-simple ul li a {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+    /* - title */
+    .main-title,
+    #column-content .block-simple h1 {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+    .block-simple .content-content h3,
+    #column-content .block-simple h3,
+    #column-content .block-content .content-content h3,
+    #column-content .block-simple h2 {
+        font-size: 2rem;
+    }
+    /* - alphabet */
+    .block-simple .alphabet {
+        font-size: 1.6rem;
+    }
+    .block-simple .letter {
+        float: none;
+        font-size: 18px;
+        display: inline-block;
+        padding: 7px;
+    }
+    /*  - block */
+    #column-right .block-wrapper {
+        font-size: 1.7rem;
+    }
+    /* - breadcrumbs */
+    .breadcrumbs {
+        font-size: 1.6rem;
+    }
+    /* names */
+    ul.names {
+        font-size: 1.7rem;
+    }
+
+    /* HEADER */
+    /* - panel 1 */
+    #header-area #panel-1 #logo,
+    #header-area #panel-1 .menu,
+    #block-header-search,
+    #header-area #panel-1 .menu li {
+        float: none !important;
+        text-align: center;
+    }
+    #header-area #panel-1 #logo {
+        display: block;
+        margin: 6px auto 0 auto;
+    }
+    #header-area #panel-1 .menu {
+        margin: 2px 20px 0 20px;
+    }
+    #header-area #panel-1 .menu li {
+        display: inline-block;
+        font-size: 1.3rem;
+    }
+    #block-header-search {
+        margin-top: 3px;
+        margin-bottom: 8px;
+    }
+    #block-header-search #field-lastname-wrapper {
+        width: 100%;
+    }
+    #block-header-search #field-lastname {
+        height: 25px;
+        font-size: 14px;
+    }
+    #block-header-search #submit-lastname {
+        float: right;
+        height: 33px;
+        margin: 0 10px;
+        background-size: 15px;
+    }
+    /* - panel 2 */
+    #header-area #panel-2 {
+        height: 62px;
+        background-size: 181px;
+    }
+    #header-area #panel-2 .wrapper {
+        padding-top: 0;
+        height: 56px;
+        background-position: 100% 94%;
+    }
+    #header-area #panel-2  #menu-panel-profile {
+        float: none;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    #header-area #panel-2  #menu-panel-user {
+        margin: -2px 50px 0 20px;
+        padding-top: 0;
+        text-align: center;
+        border-top: 1px solid #b1b1b1;
+    }
+    #header-area #panel-2 .menu li {
+        display: inline-block;
+        float: none;
+    }
+    #header-area #panel-2 #menu-panel-profile li .menu-item.profile-item {
+        line-height: 20px;
+        padding-top: 2px;
+    }
+    #header-area #panel-2.panel-2--fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+    }
+    #header-area #panel-2 .button {
+        line-height: 20px;
+        height: 20px;
+        margin: 1px 0;
+    }
+
+    /* FOOTER */
+    #footer-area {
+        height: auto;
+    }
+    #footer-area #block-footer-link {
+        display: none;
+    }
+    #block-footer-copyrights {
+        float: none;
+        text-align: center;
+    }
+    #block-footer-menu ul {
+        padding: 0 20px;
+        text-align: center;
+    }
+    #menu-footer li {
+        float: none;
+        display: inline-block;
+        margin: 0;
+        padding: 5px;
+    }
+
+    /* QUICK REGISTRATION */
+    .area-wrapper #block-footer-reg-form {
+        left: 0 !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    #block-footer-reg-form .reg-form-reg,
+    #block-footer-reg-form .reg-form-reg + div {
+        float: left;
+        display: inline-block;
+        width: 50%;
+        padding-bottom: 0px;
+    }
+    #block-footer-reg-form .reg-form-reg h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+    #block-footer-reg-form .reg-form-reg .field-req {
+        display: none;
+    }
+    #block-footer-reg-form .sector-form-footer .field {
+        width: 100%;
+    }
+    #block-footer-reg-form .form-button {
+        width: 96%;
+        height: 40px;
+        line-height: 40px;
+        background-size: 100%;
+        font-size: 15px;
+    }
+    #block-footer-reg-form .reg-form-reg + div {
+        text-align: center;
+    }
+    #block-footer-reg-form .reg-form-reg + div h3 {
+        margin-bottom: 8px;
+    }
+
+}
+@media all and (max-width: 550px) {
+    /* Quick registration */
+    #block-footer-reg-form .reg-form-reg,
+    #block-footer-reg-form .reg-form-reg + div {
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+    #block-footer-reg-form .form {
+        margin-bottom: 2px;
+    }
+    #block-footer-reg-form .form-button {
+        width: 100%;
+    }
+    #block-footer-reg-form .reg-form-reg + h3 {
+        display: none;
+    }
+    #block-footer-reg-form .reg-form-reg + div h3 {
+        margin-bottom: 2px;
+        font-size: 15px;
+    }
+}
+/* Small device */
+@media all and (max-width: 425px) {
+
+    html {
+        font-size: 9px;
+    }
+    /* Header */
+    #header-area #panel-1 .menu li a {
+        padding: 5px 6px;
+    }
+    #header-area #panel-2 #menu-panel-user li .menu-item {
+        padding: 0 2px;
+        line-height: 19px;
+    }
+}
+/* Extra small device */
+@media all and (max-width: 375px) {
+
+}
+/*----------------------------MAIN DOMAIN STYLES-----------------------------*/
+/* Tablet */
+@media all and (max-width: 1000px){
+
+    /* COMMON BLOCKS */
+
+    /*Hide theme widget*/
+    #block-theme-change-new {
+        display: none;
+    }
+    /* Under content */
+    #under-content-area .area-wrapper {
+        margin: 0;
+    }
+    #under-content-area .post-reply-form {
+        max-width: 100%;
+    }
+    /* Right ads */
+    /* invite */
+    #column-right #block-invite {
+        height: auto;
+        background: none;
+        border: 2px solid #c0d9ea;
+    }
+    /* gedcom */
+    #column-right #block-gedcom {
+        background-position: 100%;
+    }
+    /* hack with border */
+    #column-right #block-gedcom .block-wrapper {
+        background-position: 100%;
+        width: 84%;
+        background: white;
+        height: 139px;
+        border: 2px solid #cce599;
+        border-right: 0;
+    }
+    #column-right #block-gedcom .block-title,
+    #column-right #block-gedcom .block-content {
+        position: relative;
+        left: 60px;
+    }
+    /* Forms */
+    .form .input:not(.checkbox),
+    .form .form-input {
+        height: 30px;
+        line-height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        width: 100% !important;
+    }
+    .form .input.file {
+        height: 40px;
+        width: 100% !important;
+    }
+    .form .field {
+        font-size: 1.5rem;
+    }
+    .form-button-small,
+    .form-button {
+        height: 40px;
+        line-height: 40px;
+        background-size: 2% !important;
+    }
+    .post-reply-form {
+        max-width: 100%;
+    }
+    .form .field-content .field-values {
+        float: none;
+    }
+    .form .field-content .descr {
+        max-width: 400px;
+    }
+    .form .select {
+        width: 100% !important;
+    }
+    .form .select-day,
+    .form .select-month,
+    .form .select-year {
+        font-size: 15px;
+        width: 33% !important;
+        margin-right: 1px;
+        margin-bottom: 7px;
+    }
+    .form .select-year {
+        margin-right: 0;
+    }
+    /* Search */
+    #block-search-substring #search-substring-text {
+        padding: 10px 25px 10px 3px;
+    }
+    /* Pager */
+    .pager ul li.active {
+        padding: 5px 8px;
+    }
+
+
+    /* USER PAGE */
+    /* Header block profile */
+    #column-left #block-profile-photo {
+        float: left;
+    }
+    #column-left #block-profile-actions ul {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    #column-left #block-profile-actions ul li {
+        display: inline-block;
+        padding: 6px 10px;
+    }
+    #column-left #block-profile-actions .arrow {
+        width: 0;
+    }
+    /* - groups */
+    #column-left #block-user-groups {
+        bottom: 12px;
+    }
+    #column-left #block-user-groups ul li {
+        display: inline-block;
+        width: 49%;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    /* calendars */
+    #column-left #block-calendar2 {
+        float: left;
+        width: 49%;
+        margin-right: 2%;
+    }
+    #column-left #block-calendar {
+        width: 48%;
+    }
+    /* User content */
+    /* photo */
+    #column-content .albums.inblock {
+        text-align: center;
+    }
+    #column-content .albums.inblock li a {
+        float: none;
+    }
+    #column-content .albums.inblock li a .list-albums-photo {
+        margin: 0 auto;
+    }
+    /* Svr block (carusel blocks) */
+    #column-content #block-svr .field input {
+        width: 198px;
+        padding: 11px 8px;
+    }
+    #column-content #block-svr .button-small {
+        height: 40px;
+        line-height: 40px;
+        background-size: 2%;
+    }
+    #column-content #block-svr .select-day,
+    #column-content #block-svr .select-month,
+    #column-content #block-svr .select-year {
+        font-size: 17px;
+        width: 73px;
+        margin-right: 9px;
+        margin-bottom: 7px;
+    }
+
+    /* PHOTOS PAGE */
+    /* albums */
+    #column-center-left-wrapper .albums,
+    #column-center-left-wrapper #album-photos,
+    .photos-photo {
+        width: 100%;
+    }
+    /* photo */
+    .photos-photo img,
+    .photo-comments-block .block-comments {
+        max-width: 100%;
+    }
+    /* photo - comments*/
+    .photo-comments-block,
+    .photo-info-block {
+        width: 100%;
+        float: none;
+    }
+
+    /* FAMILY PAGE */
+    #family-stats li {
+        margin: 10px;
+    }
+    #family-stats:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    /* GROUP PAGE */
+    .group-block .group-title {
+        font-size: 15px;
+    }
+    #groups-search-form .search {
+        height: 37px;
+        line-height: 38px;
+        border-radius: 3PX;
+    }
+    .block-comments.group {
+        max-width: 100%;
+    }
+    .list-users.list-search-substring li a {
+        font-size: 1.2rem !important;
+    }
+    #form-article-add #ta_article_text_tbl {
+        width: 100%;
+    }
+
+}
+/* Phablet */
+@media all and (max-width: 640px){
+    /* COMMON BLOCKS */
+    /* Forms */
+    .form .form-input:not(.checkbox) {
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 9px 5px;
+    }
+    /* gedcom */
+    #column-right #block-gedcom .block-wrapper {
+        width: 75%;
+    }
+
+
+    /* USER PAGE */
+    /* Header block profile */
+    #column-left #block-profile-photo {
+        float: none;
+        margin: 0 auto;
+    }
+    /* groups */
+    #column-left #block-user-groups ul li {
+        display: block;
+    }
+    /* calendars */
+    #column-left #block-calendar2 {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    #column-left #block-calendar {
+        width: 100%;
+    }
+    /* Friends search */
+    #column-content #block-svr .field {
+        width: 100%;
+    }
+    #column-content #block-svr .field input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 7px;
+    }
+
+    /* PHOTOS PAGE */
+    /* albums */
+    #column-center-left-wrapper .albums .list-album,
+    #column-center-left-wrapper #album-photos .list-photo {
+        width: 50%;
+    }
+
+    /* GROUP PAGE */
+    .group-buttons {
+        float: left;
+    }
+    .group-buttons:after, .group-title {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    #column-center-left-wrapper .articles-list a {
+        float: none;
+    }
+    #column-center-left-wrapper .article .fs-img {
+        float: none;
+        margin: 0;
+    }
+    #column-center-left-wrapper .article .fs-img img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+}
+/* Small device */
+@media all and (max-width: 425px){
+    /* COMMON BLOCKS */
+    /* Forms */
+    .field-req .field-title {
+        float: none;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .form .field-content {
+        padding-left: 0;
+    }
+    .form .field-content .field-values {
+        float: none;
+    }
+    .form-button {
+        width: 100%;
+    }
+
+
+    /* USER PAGE */
+    /* photo */
+    #column-content .albums.inblock li {
+        width: 50%;
+    }
+    /* PHOTOS PAGE */
+    /* albums */
+    #column-center-left-wrapper .albums .list-album,
+    #column-center-left-wrapper #album-photos .list-photo {
+        width: 100%;
+        padding-left: 22%;
+    }
+}
+/* Extra small */
+@media all and (max-width: 375px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

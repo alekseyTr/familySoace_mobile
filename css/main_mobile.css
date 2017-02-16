@@ -1,17 +1,317 @@
 /* Tablet */
 @media all and (max-width: 1000px){
+
+    /* COMMON BLOCKS */
+
     /*Hide theme widget*/
     #block-theme-change-new {
         display: none;
     }
+    /* Under content */
+    #under-content-area .area-wrapper {
+        margin: 0;
+    }
+    #under-content-area .post-reply-form {
+        max-width: 100%;
+    }
+    /* Right ads */
+    /* invite */
+    #column-right #block-invite {
+        height: auto;
+        background: none;
+        border: 2px solid #c0d9ea;
+    }
+    /* gedcom */
+    #column-right #block-gedcom {
+        background-position: 100%;
+    }
+    /* hack with border */
+    #column-right #block-gedcom .block-wrapper {
+        background-position: 100%;
+        width: 84%;
+        background: white;
+        height: 139px;
+        border: 2px solid #cce599;
+        border-right: 0;
+    }
+    #column-right #block-gedcom .block-title,
+    #column-right #block-gedcom .block-content {
+        position: relative;
+        left: 60px;
+    }
+    /* Forms */
+    .form .input:not(.checkbox),
+    .form .form-input {
+        height: 30px;
+        line-height: 30px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        width: 100% !important;
+    }
+    .form .input.file {
+        height: 40px;
+        width: 100% !important;
+    }
+    .form .field {
+        font-size: 1.5rem;
+    }
+    .form-button-small,
+    .form-button {
+        height: 40px;
+        line-height: 40px;
+        background-size: 2% !important;
+    }
+    .post-reply-form {
+        max-width: 100%;
+    }
+    .form .field-content .field-values {
+        float: none;
+    }
+    .form .field-content .descr {
+        max-width: 400px;
+    }
+    .form .select {
+        width: 100% !important;
+    }
+    .form .select-day,
+    .form .select-month,
+    .form .select-year {
+        font-size: 15px;
+        width: 33% !important;
+        margin-right: 1px;
+        margin-bottom: 7px;
+    }
+    .form .select-year {
+        margin-right: 0;
+    }
+    /* Search */
+    #block-search-substring #search-substring-text {
+        padding: 10px 25px 10px 3px;
+    }
+    /* Pager */
+    .pager ul li.active {
+        padding: 5px 8px;
+    }
+
+
+    /* USER PAGE */
+    /* Header block profile */
+    #column-left #block-profile-photo {
+        float: left;
+    }
+    #column-left #block-profile-actions ul {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    #column-left #block-profile-actions ul li {
+        display: inline-block;
+        padding: 6px 10px;
+    }
+    #column-left #block-profile-actions .arrow {
+        width: 0;
+    }
+    /* - groups */
+    #column-left #block-user-groups {
+        bottom: 12px;
+    }
+    #column-left #block-user-groups ul li {
+        display: inline-block;
+        width: 49%;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    /* calendars */
+    #column-left #block-calendar2 {
+        float: left;
+        width: 49%;
+        margin-right: 2%;
+    }
+    #column-left #block-calendar {
+        width: 48%;
+    }
+    /* User content */
+    /* photo */
+    #column-content .albums.inblock {
+        text-align: center;
+    }
+    #column-content .albums.inblock li a {
+        float: none;
+    }
+    #column-content .albums.inblock li a .list-albums-photo {
+        margin: 0 auto;
+    }
+    /* Svr block (carusel blocks) */
+    #column-content #block-svr .field input {
+        width: 198px;
+        padding: 11px 8px;
+    }
+    #column-content #block-svr .button-small {
+        height: 40px;
+        line-height: 40px;
+        background-size: 2%;
+    }
+    #column-content #block-svr .select-day,
+    #column-content #block-svr .select-month,
+    #column-content #block-svr .select-year {
+        font-size: 17px;
+        width: 73px;
+        margin-right: 9px;
+        margin-bottom: 7px;
+    }
+
+    /* PHOTOS PAGE */
+    /* albums */
+    #column-center-left-wrapper .albums,
+    #column-center-left-wrapper #album-photos,
+    .photos-photo {
+        width: 100%;
+    }
+    /* photo */
+    .photos-photo img,
+    .photo-comments-block .block-comments {
+        max-width: 100%;
+    }
+    /* photo - comments*/
+    .photo-comments-block,
+    .photo-info-block {
+        width: 100%;
+        float: none;
+    }
+
+    /* FAMILY PAGE */
+    #family-stats li {
+        margin: 10px;
+    }
+    #family-stats:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    /* GROUP PAGE */
+    .group-block .group-title {
+        font-size: 15px;
+    }
+    #groups-search-form .search {
+        height: 37px;
+        line-height: 38px;
+        border-radius: 3PX;
+    }
+    .block-comments.group {
+        max-width: 100%;
+    }
+    .list-users.list-search-substring li a {
+        font-size: 1.2rem !important;
+    }
+    #form-article-add #ta_article_text_tbl {
+        width: 100%;
+    }
+
 }
 /* Phablet */
-@media all and (max-width: 550px){
+@media all and (max-width: 640px){
+    /* COMMON BLOCKS */
+    /* Forms */
+    .form .form-input:not(.checkbox) {
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 9px 5px;
+    }
+    /* gedcom */
+    #column-right #block-gedcom .block-wrapper {
+        width: 75%;
+    }
+
+
+    /* USER PAGE */
+    /* Header block profile */
+    #column-left #block-profile-photo {
+        float: none;
+        margin: 0 auto;
+    }
+    /* groups */
+    #column-left #block-user-groups ul li {
+        display: block;
+    }
+    /* calendars */
+    #column-left #block-calendar2 {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    #column-left #block-calendar {
+        width: 100%;
+    }
+    /* Friends search */
+    #column-content #block-svr .field {
+        width: 100%;
+    }
+    #column-content #block-svr .field input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 7px;
+    }
+
+    /* PHOTOS PAGE */
+    /* albums */
+    #column-center-left-wrapper .albums .list-album,
+    #column-center-left-wrapper #album-photos .list-photo {
+        width: 50%;
+    }
+
+    /* GROUP PAGE */
+    .group-buttons {
+        float: left;
+    }
+    .group-buttons:after, .group-title {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    #column-center-left-wrapper .articles-list a {
+        float: none;
+    }
+    #column-center-left-wrapper .article .fs-img {
+        float: none;
+        margin: 0;
+    }
+    #column-center-left-wrapper .article .fs-img img {
+        width: 100%;
+        box-sizing: border-box;
+    }
 
 }
 /* Small device */
 @media all and (max-width: 425px){
+    /* COMMON BLOCKS */
+    /* Forms */
+    .field-req .field-title {
+        float: none;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .form .field-content {
+        padding-left: 0;
+    }
+    .form .field-content .field-values {
+        float: none;
+    }
+    .form-button {
+        width: 100%;
+    }
 
+    /* USER PAGE */
+    /* photo */
+    #column-content .albums.inblock li {
+        width: 50%;
+    }
+    /* PHOTOS PAGE */
+    /* albums */
+    #column-center-left-wrapper .albums .list-album,
+    #column-center-left-wrapper #album-photos .list-photo {
+        width: 100%;
+        padding-left: 22%;
+    }
 }
 /* Extra small */
 @media all and (max-width: 375px){

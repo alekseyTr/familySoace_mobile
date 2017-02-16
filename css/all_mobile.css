@@ -183,6 +183,9 @@
         height: 20px;
         margin: 1px 0;
     }
+    #header-area #panel-2 .menu-item-more {
+        font-weight: bold;
+    }
 
     /* FOOTER */
     #footer-area {

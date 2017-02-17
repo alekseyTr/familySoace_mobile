@@ -3,6 +3,15 @@
 
     /* COMMON BLOCKS */
 
+    /* HEADER */
+    #header-area #panel-2 {
+        height: 55px;
+        background-size: cover;
+    }
+    #header-area #panel-2  #menu-panel-user {
+        padding-top: 2px;
+        margin: 0;
+    }
     /*Hide theme widget*/
     #block-theme-change-new {
         display: none;
@@ -41,25 +50,41 @@
     }
     /* Forms */
     .form .input:not(.checkbox),
-    .form .form-input {
-        height: 30px;
-        line-height: 30px;
-        padding: 5px 5px;
+    .form .form-input:not(.checkbox) {
         box-sizing: border-box;
         width: 100% !important;
+        height: 30px;
+        padding: 5px 5px;
+        line-height: 30px;
+    }
+    .form .form-input.radio {
+        width: auto !important;
+        height: auto;
+    }
+    #form-captcha input {
+        display: inline-block;
+        width: 100px !important;
+        height: 45px;
     }
     .form .input.file {
-        height: 40px;
         width: 100% !important;
+        height: 40px;
     }
     .form .field {
         font-size: 1.5rem;
     }
     .form-button-small,
-    .form-button {
+    .form-button,
+    .tests-list .test-content .button,
+    #column-content .result div .button,
+    .random-tests + .button {
+        width: 100%;
         height: 40px;
-        line-height: 40px;
+        margin-left: 0;
+        line-height: 40px !important;
         background-size: 2% !important;
+        text-align: center;
+        box-sizing: border-box;
     }
     .post-reply-form {
         max-width: 100%;
@@ -92,7 +117,16 @@
     .pager ul li.active {
         padding: 5px 8px;
     }
-
+    /* Comments */
+    .block-comments.content,
+    .block-comments {
+        max-width: 100%;
+    }
+    /* User list */
+    #column-content .list-users .user-item-name a {
+        font-size: 11px;
+        line-height: normal;
+    }
 
     /* USER PAGE */
     /* Header block profile */
@@ -121,6 +155,12 @@
         line-height: 21px;
     }
     /* calendars */
+    #list-calendar-months + #calendar-dows li {
+        width: 14.1%;
+    }
+    #list-calendar-months + #calendar-dows + #calendar-month li {
+        height: auto;
+    }
     #column-left #block-calendar2 {
         float: left;
         width: 49%;
@@ -139,6 +179,13 @@
     }
     #column-content .albums.inblock li a .list-albums-photo {
         margin: 0 auto;
+    }
+    #column-content #block-profile-albums .block-title {
+        margin: 1rem 0;
+    }
+    #column-content #block-profile-albums .marker {
+        padding: 5px 10px;
+        font-size: 1.7rem;
     }
     /* Svr block (carusel blocks) */
     #column-content #block-svr .field input {
@@ -207,21 +254,135 @@
         width: 100%;
     }
 
+    /* BIO PAGE */
+    /* right column */
+    #column-right #block-bio .right-menu li {
+        display: inline-block;
+        width: 49%;
+        font-size: 1.5rem;
+    }
+    #wrapper_bio #ta_bio_tbl {
+        width: 100% !important;
+    }
+    #wrapper_bio + .descr {
+        height: auto;
+    }
+
+    /* CALENDAR PAGE */
+    #column-center-left-wrapper #calendar-month {
+        width: 100%;
+    }
+    #column-center-left-wrapper #calendar-month li.calendar-day {
+        width: 14.1%;
+        height: 90px;
+    }
+
+    /* MEDIA PAGE */
+    #column-center-left-wrapper #media-items .media-item {
+        float: none;
+        width: 49%;
+        margin: 10px 0.5% 10px 0.5%;
+        text-align: center;
+    }
+    #column-center-left-wrapper #media-items .media-item .title {
+        font-size: 1.6rem;
+    }
+    #column-center-left-wrapper #media-items .media-item .text p {
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+    }
+
+    /* WEBINAR */
+    .webinar-tabs-content iframe {
+        width: 100%;
+    }
+    #column-content #webinar-list {
+        font-size: 1.7rem;
+    }
+    #column-content #webinar-list .webinar-item {
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0,0,0,.07);
+    }
+    #column-content #webinar-list .webinar-item:last-child {
+        padding-bottom: 0;
+        border: none;
+    }
+
+    /* QUIZ */
+    /* list and result */
+    #column-content .tests-list li .test-content {
+        width: 80%;
+    }
+    #column-content .result div {
+        width: 70%;
+    }
+    /* single quiz */
+    #column-content #form-quiz  {
+        max-width: 100%;
+    }
+    #column-content #form-quiz .field-values .value {
+        font-size: 1.6rem;
+    }
+    .progress-wrapper {
+        height: 40px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    /* random quiz */
+    #column-content .random-tests li {
+        width: 24%;
+        margin: 0;
+    }
+    /*.progress-wrapper .progress {*/
+        /*background-size: 6%;*/
+    /*}*/
+    #column-content .random-tests li a {
+        font-size: 1.3rem !important;
+        line-height: 1.8rem !important;
+    }
+
+    /* DIARY */
+    /* form */
+    #column-content .message_table #ta_text_tbl {
+        width: 100% !important;
+    }
+
+    /* GEDCOM */
+    input[name="ged_import_file"] {
+        width: 100%;
+        line-height: 40px;
+        padding: 1px 17px;
+        box-sizing: border-box;
+    }
+
 }
 /* Phablet */
 @media all and (max-width: 640px){
     /* COMMON BLOCKS */
+
+    /* Breadcrumbs */
+    /* small */
+    /* TODO:test */
+    #column-center-left #menu-tabs2 li {
+        float: none;
+        margin: 0;
+        background-color: #f6f9fb;
+    }
+    #column-center-left #menu-tabs2 li a{
+        text-decoration: none;
+    }
+
     /* Forms */
     .form .form-input:not(.checkbox) {
         width: 100% !important;
         box-sizing: border-box;
-        padding: 9px 5px;
+        padding: 3px 5px;
     }
+
     /* gedcom */
     #column-right #block-gedcom .block-wrapper {
         width: 75%;
     }
-
 
     /* USER PAGE */
     /* Header block profile */
@@ -280,6 +441,62 @@
         box-sizing: border-box;
     }
 
+    /* BIO PAGE */
+    /* right column */
+    #column-right #block-bio .right-menu li {
+        width: 100%;
+    }
+
+    /* CALENDAR PAGE */
+    #column-center-left-wrapper #calendar-month li.calendar-day {
+        width: 14%;
+        height: 65px;
+    }
+
+    /* MEDIA PAGE */
+    #column-center-left-wrapper #media-items .media-item {
+        width: 100%;
+    }
+
+    /* QUIZ */
+    #column-content .result {
+        text-align: center;
+    }
+    #column-content .tests-list li .test-content,
+    #column-content .tests-list li .test-img,
+    #column-content .result div,
+    #column-content .result img {
+        float: none;
+    }
+    #column-content .tests-list li .test-content,
+    #column-content .result div {
+        width: 100%;
+        text-align: center;
+    }
+    #column-content .tests-list li .test-img,
+    #column-content .result img {
+        margin: 0 auto;
+    }
+    #column-content .tests-list li .test-img,
+    #column-content .tests-list li .test-img a img,
+    #column-content .result img {
+        width: 250px;
+    }
+    #column-content .tests-list li .test-img img.label-new {
+        top: 11px;
+    }
+    /* random quiz */
+    #column-content .random-tests li {
+        width: 33%;
+    }
+
+    /* SETUP */
+    /* TODO: add spec class */
+    #column-center-left-wrapper .columns-2 .column {
+        float: none;
+        width: 100%;
+    }
+
 }
 /* Small device */
 @media all and (max-width: 425px){
@@ -299,6 +516,9 @@
     .form-button {
         width: 100%;
     }
+    .form .field-title {
+        width: auto;
+    }
 
     /* USER PAGE */
     /* photo */
@@ -312,8 +532,21 @@
         width: 100%;
         padding-left: 22%;
     }
+
+    /* CALENDAR PAGE */
+    #column-center-left-wrapper #calendar-month li.calendar-day {
+        width: 13.8%;
+        height: 52px;
+    }
+    /* random quiz */
+    #column-content .random-tests li {
+        width: 50%;
+    }
 }
 /* Extra small */
 @media all and (max-width: 375px){
-
+    /* random quiz */
+    #column-content .random-tests li {
+        width: 100%;
+    }
 }

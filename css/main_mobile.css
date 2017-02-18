@@ -77,7 +77,10 @@
     .form-button,
     .tests-list .test-content .button,
     #column-content .result div .button,
-    .random-tests + .button {
+    .random-tests + .button,
+    .button-width-100,
+    .table-base .button-small,
+    form[name='faq_search'] #search_str .form-button {
         width: 100%;
         height: 40px;
         margin-left: 0;
@@ -85,6 +88,12 @@
         background-size: 2% !important;
         text-align: center;
         box-sizing: border-box;
+    }
+    .table-base .button-small {
+        height: 30px;
+        line-height: 30px !important;
+        margin-bottom: -1px;
+        margin-top: 5px;
     }
     .post-reply-form {
         max-width: 100%;
@@ -126,6 +135,21 @@
     #column-content .list-users .user-item-name a {
         font-size: 11px;
         line-height: normal;
+    }
+    /* Tables */
+    table.table-base th {
+        font-size: 12px;
+    }
+    table.table-base tr td p {
+        font-size: 16px !important;
+        line-height: 21px !important;
+    }
+    #block-search2-pager {
+        height: 43px;
+    }
+    #block-search2-pager span.js-href {
+        float: none;
+        font-size: 16px;
     }
 
     /* USER PAGE */
@@ -355,6 +379,43 @@
         box-sizing: border-box;
     }
 
+    /* FAQ */
+    /* search */
+    form[name='faq_search'] #search_str {
+        float: none;
+        height: auto;
+        font-size: 1.4rem;
+    }
+    form[name='faq_search'] #search_str #ssinput {
+        height: 38px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 0 5px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    /* cats */
+    #column-content .line .cat1 {
+        width: 33%;
+    }
+
+
+}
+@media all and (max-width: 670px){
+    #content-area .menu.tabs,
+    #content-area .menu.tabs li {
+        float: none;
+        margin: 0;
+    }
+    #content-area .menu.tabs li .menu-item {
+        border-radius: 0;
+    }
+    #menu-tabs li.current .menu-item {
+        border-color: #a9d423;
+        background-color: #7aba00;
+        color: #fff;
+    }
 }
 /* Phablet */
 @media all and (max-width: 640px){
@@ -411,6 +472,47 @@
         width: 100%;
         box-sizing: border-box;
         margin-bottom: 7px;
+    }
+    /* Tables */
+    /* TODO: CLASS FOR ALL TABLES */
+    table.table-base tr:nth-child(-n+2){
+        display: none;
+    }
+    table.table-base td,
+    table.table-base tr {
+        display: block;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    table.table-base tr.odd {
+        background-color: rgba(0, 0, 0, 0.01);
+    }
+    table.table-base tr.odd td:last-child {
+        padding-top: 0;
+    }
+    /* Add content */
+    table.table-base tr.odd td:nth-child(3):before {
+        content: 'Дата рождения: ';
+        font-weight: bold;
+    }
+    table.table-base tr.odd td:last-child[rowspan='2']:before {
+        content: 'Дата подачи заявки: ';
+        font-weight: bold;
+    }
+
+    table.table-base tr td {
+        border: none;
+    }
+    table.table-base tr .search_name {
+        border-bottom: 1px solid #ddd;
+    }
+    table.table-base tr .search_name + td {
+        padding-bottom: 0;
+        line-height: 21px;
+    }
+    table.table-base tr .search_name + td + td {
+        padding-top: 0;
+        line-height: 21px;
     }
 
     /* PHOTOS PAGE */
@@ -497,6 +599,12 @@
         width: 100%;
     }
 
+    /* FAQ */
+    /* cats */
+    #column-content .line .cat1 {
+        width: 50%;
+    }
+
 }
 /* Small device */
 @media all and (max-width: 425px){
@@ -541,6 +649,12 @@
     /* random quiz */
     #column-content .random-tests li {
         width: 50%;
+    }
+
+    /* FAQ */
+    /* cats */
+    #column-content .line .cat1 {
+        width: 100%;
     }
 }
 /* Extra small */

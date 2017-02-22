@@ -37,7 +37,7 @@
     #block-title-header-reg {
         width: 24%;
         text-align: center;
-        margin-left: 0;
+        margin-left: 0 !important;
     }
     #header-area #block-title-socials .social-logins {
         text-align: center;

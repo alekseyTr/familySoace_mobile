@@ -1,7 +1,9 @@
 /* Tablet */
 @media all and (max-width: 1000px){
 
-    /* COMMON BLOCKS */
+    /* ==================================================================== */
+    /* COMMON */
+    /* ==================================================================== */
 
     /* HEADER */
     #header-area #panel-2 {
@@ -139,6 +141,9 @@
     #column-content .table-medals + #ajax-update-content .list-users li {
         height: 155px;
     }
+    #column-content .list-users li {
+        height: 145px;
+    }
     /* Tables */
     table.table-base th {
         font-size: 12px;
@@ -155,10 +160,15 @@
         font-size: 16px;
     }
 
+    /* ==================================================================== */
     /* USER PAGE */
+    /* ==================================================================== */
+
     /* Header block profile */
     #column-left #block-profile-photo {
         float: left;
+        margin-right: 15px;
+        overflow: hidden;
     }
     #column-left #block-profile-actions ul {
         margin-bottom: 0;
@@ -199,6 +209,9 @@
     /* User content */
     /* photo */
     #column-content .albums.inblock {
+        /*text-align: center;*/
+    }
+    #column-content .albums.inblock li {
         text-align: center;
     }
     #column-content .albums.inblock li a {
@@ -232,13 +245,40 @@
         margin-right: 9px;
         margin-bottom: 7px;
     }
+    /* Profile-info */
+    #column-content #block-profile-info {
+        font-size: 1.5rem;
+    }
+    #column-content #block-profile-info .block-content {
+        padding: 0;
+    }
+    #column-content #block-profile-info #profile-data-list li {
+        margin-bottom: 8px;
+    }
 
+    /* ==================================================================== */
     /* PHOTOS PAGE */
+    /* ==================================================================== */
+
     /* albums */
     #column-center-left-wrapper .albums,
     #column-center-left-wrapper #album-photos,
     .photos-photo {
         width: 100%;
+    }
+    #column-center-left-wrapper .albums .list-album a,
+    #column-center-left-wrapper #album-photos .list-photo a,
+    .photos-photo {
+        float: none;
+        display: inline-block;
+    }
+    #column-center-left-wrapper .albums .list-album,
+    #column-center-left-wrapper #album-photos .list-photo,
+    .photos-photo {
+        text-align: center;
+    }
+    #column-center-left-wrapper #album-photos .list-photo #images {
+        display: inline-block;
     }
     /* photo */
     .photos-photo img,
@@ -262,7 +302,10 @@
         clear: both;
     }
 
+    /* ==================================================================== */
     /* GROUP PAGE */
+    /* ==================================================================== */
+
     .group-block .group-title {
         font-size: 15px;
     }
@@ -281,7 +324,10 @@
         width: 100%;
     }
 
+    /* ==================================================================== */
     /* BIO PAGE */
+    /* ==================================================================== */
+
     /* right column */
     #column-right #block-bio .right-menu li {
         display: inline-block;
@@ -295,7 +341,10 @@
         height: auto;
     }
 
+    /* ==================================================================== */
     /* CALENDAR PAGE */
+    /* ==================================================================== */
+
     #column-center-left-wrapper #calendar-month {
         width: 100%;
     }
@@ -304,7 +353,10 @@
         height: 90px;
     }
 
+    /* ==================================================================== */
     /* MEDIA PAGE */
+    /* ==================================================================== */
+
     #column-center-left-wrapper #media-items .media-item {
         float: none;
         width: 49%;
@@ -319,7 +371,10 @@
         line-height: 2.3rem;
     }
 
+    /* ==================================================================== */
     /* WEBINAR */
+    /* ==================================================================== */
+
     .webinar-tabs-content iframe {
         width: 100%;
     }
@@ -335,7 +390,10 @@
         border: none;
     }
 
+    /* ==================================================================== */
     /* QUIZ */
+    /* ==================================================================== */
+
     /* list and result */
     #column-content .tests-list li .test-content {
         width: 80%;
@@ -368,13 +426,19 @@
         line-height: 1.8rem !important;
     }
 
+    /* ==================================================================== */
     /* DIARY */
+    /* ==================================================================== */
+
     /* form */
     #column-content .message_table #ta_text_tbl {
         width: 100% !important;
     }
 
+    /* ==================================================================== */
     /* GEDCOM */
+    /* ==================================================================== */
+
     input[name="ged_import_file"] {
         width: 100%;
         line-height: 40px;
@@ -382,7 +446,10 @@
         box-sizing: border-box;
     }
 
+    /* ==================================================================== */
     /* FAQ */
+    /* ==================================================================== */
+
     /* search */
     form[name='faq_search'] #search_str {
         float: none;
@@ -403,9 +470,31 @@
         width: 33%;
     }
 
+    /* ==================================================================== */
+    /* REGX */
+    /* ==================================================================== */
+    #columns #column-right {
+        width: auto;
+        padding-left: 0;
+    }
+    /*form[name="form_regx"] .field-content .field-values,*/
+    /*form[name="form_regx"] .field-content .descr {*/
+        /*float: none;*/
+    /*}*/
+    /*form[name="form_regx"] .form-input {*/
+        /*height: 35px;*/
+    /*}*/
+    /*form[name="form_regx"] .field-content .descr {*/
+        /*max-width: 95%;*/
+        /*margin: 10px 0 0 0;*/
+    /*}*/
 
 }
 @media all and (max-width: 670px){
+    /* ==================================================================== */
+    /* COMMON */
+    /* ==================================================================== */
+
     #content-area .menu.tabs,
     #content-area .menu.tabs li {
         float: none;
@@ -422,7 +511,9 @@
 }
 /* Phablet */
 @media all and (max-width: 640px){
-    /* COMMON BLOCKS */
+    /* ==================================================================== */
+    /* COMMON */
+    /* ==================================================================== */
 
     /* Breadcrumbs */
     /* small */
@@ -448,7 +539,10 @@
         width: 75%;
     }
 
+    /* ==================================================================== */
     /* USER PAGE */
+    /* ==================================================================== */
+
     /* Header block profile */
     #column-left #block-profile-photo {
         float: none;
@@ -475,6 +569,12 @@
         width: 100%;
         box-sizing: border-box;
         margin-bottom: 7px;
+    }
+    /* Albums */
+    .inblock .list-albums-photo,
+    .inblock .list-albums-photo img {
+        width: 160px;
+        height: 160px;
     }
     /* TABLES */
     /* Table people search */
@@ -588,14 +688,21 @@
         content: 'супруг: ';
     }
 
+    /* ==================================================================== */
     /* PHOTOS PAGE */
+    /* ==================================================================== */
+
     /* albums */
     #column-center-left-wrapper .albums .list-album,
     #column-center-left-wrapper #album-photos .list-photo {
         width: 50%;
+        text-align: center;
     }
 
+    /* ==================================================================== */
     /* GROUP PAGE */
+    /* ==================================================================== */
+
     .group-buttons {
         float: left;
     }
@@ -616,24 +723,36 @@
         box-sizing: border-box;
     }
 
+    /* ==================================================================== */
     /* BIO PAGE */
+    /* ==================================================================== */
+
     /* right column */
     #column-right #block-bio .right-menu li {
         width: 100%;
     }
 
+    /* ==================================================================== */
     /* CALENDAR PAGE */
+    /* ==================================================================== */
+
     #column-center-left-wrapper #calendar-month li.calendar-day {
         width: 14%;
         height: 65px;
     }
 
+    /* ==================================================================== */
     /* MEDIA PAGE */
+    /* ==================================================================== */
+
     #column-center-left-wrapper #media-items .media-item {
         width: 100%;
     }
 
+    /* ==================================================================== */
     /* QUIZ */
+    /* ==================================================================== */
+
     #column-content .result {
         text-align: center;
     }
@@ -665,14 +784,20 @@
         width: 33%;
     }
 
+    /* ==================================================================== */
     /* SETUP */
+    /* ==================================================================== */
+
     /* TODO: add spec class */
     #column-center-left-wrapper .columns-2 .column {
         float: none;
         width: 100%;
     }
 
+    /* ==================================================================== */
     /* FAQ */
+    /* ==================================================================== */
+
     /* cats */
     #column-content .line .cat1 {
         width: 50%;
@@ -681,7 +806,10 @@
 }
 /* Small device */
 @media all and (max-width: 425px){
-    /* COMMON BLOCKS */
+    /* ==================================================================== */
+    /* COMMON */
+    /* ==================================================================== */
+
     /* Forms */
     .field-req .field-title {
         float: none;
@@ -701,20 +829,38 @@
         width: auto;
     }
 
+    /* ==================================================================== */
     /* USER PAGE */
+    /* ==================================================================== */
+
     /* photo */
     #column-content .albums.inblock li {
-        width: 50%;
+        width: 100%;
+        text-align: center;
     }
+    /* Profile-info */
+    #column-content #block-profile-info #profile-data-list label {
+        float: none;
+        min-width: 100%;
+        margin-bottom: 5px;
+    }
+    #column-content #block-profile-info #profile-data-list span {
+        padding: 0;
+    }
+    /* ==================================================================== */
     /* PHOTOS PAGE */
+    /* ==================================================================== */
+
     /* albums */
     #column-center-left-wrapper .albums .list-album,
     #column-center-left-wrapper #album-photos .list-photo {
         width: 100%;
-        padding-left: 22%;
     }
 
+    /* ==================================================================== */
     /* CALENDAR PAGE */
+    /* ==================================================================== */
+
     #column-center-left-wrapper #calendar-month li.calendar-day {
         width: 13.8%;
         height: 52px;
@@ -724,13 +870,19 @@
         width: 50%;
     }
 
+    /* ==================================================================== */
     /* FAQ */
+    /* ==================================================================== */
+
     /* cats */
     #column-content .line .cat1 {
         width: 100%;
     }
 
+    /* ==================================================================== */
     /* TABLES */
+    /* ==================================================================== */
+
     /* Table medals */
     table.table-medals td,
     table.table-medals tr {

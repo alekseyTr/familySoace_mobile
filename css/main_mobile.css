@@ -309,10 +309,12 @@
     .group-block .group-title {
         font-size: 15px;
     }
-    #groups-search-form .search {
+    #column-content #groups-search-form .search {
+        box-sizing: border-box;
         height: 37px;
+        width: 100%;
         line-height: 38px;
-        border-radius: 3PX;
+        border-radius: 3px;
     }
     .block-comments.group {
         max-width: 100%;

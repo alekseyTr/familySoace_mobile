@@ -59,6 +59,9 @@
     #block-title-menu-columns {
         padding: 0;
     }
+    .with-right-column #block-title-menu-columns {
+        width: auto;
+    }
     /* Title slider */
     /* TODO: slider */
 

@@ -22,7 +22,7 @@
 
     /* Video */
     #block-video #videoplayer {
-        width: auto !important;
+        width: 100% !important;
     }
     #block-video .video-caption {
         width: auto;
@@ -43,14 +43,106 @@
         left: 0;
     }
 
+    /* Form */
+    #block-service-form .form {
+        width: 100%;
+        border-right: none;
+        float: none;
+        max-width: 100%;
+    }
+    #block-service-form .form .field-content .field-values {
+        float: none;
+    }
+    #block-service-form .form .form-input,
+    #block-service-form #field_phone,
+    #block-service-form #field_promo_code,
+    #block-service-form #field_address {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #block-service-form .form .field-content .descr {
+        margin-left: 0;
+        max-width: 100%;
+        font-size: 13px;
+    }
+    #block-service-form .form-genealogy-service.form-captcha #field_price {
+        position: relative;
+        margin: 30px auto;
+    }
+    #block-service-form .form-genealogy-service.form-captcha .sector-form-footer .sector-content {
+        position: relative;
+        padding-top: 0;
+    }
+    .form-genealogy-service.form-captcha .sector-form-footer .sector-content .field-req {
+        position: relative;
+        width: 100%;
+    }
+    #block-service-form .form .sector-form-footer {
+        width: 100%;
+    }
+    #block-service-form .form-button {
+        width: 100%;
+    }
+    /* Right column */
+    #block-service-form .right_block {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        border: none;
+    }
+    #block-service-form .right_block > li {
+        float: left;
+        width: 33%;
+        min-height: 220px;
+        padding-top: 40px !important;
+        text-align: center;
+    }
+    #block-service-form .right_block > li.last {
+        width: 100%;
+    }
+
 }
 
-@media all and (max-width: 768px){
 
+@media all and (max-width: 768px){
+    /* Form */
+    #block-service-form .right_block > li {
+        float: none;
+        width: 100%;
+        min-height: 100%;
+        padding-top: 20px !important;
+    }
+    #block-service-blank .block-content {
+        height: 100%;
+        padding-left: 0;
+        padding-top: 110px;
+        background-position: center top;
+    }
 }
 /* Phablet */
 @media all and (max-width: 550px){
-
+    #types-tabs .item,
+    .left-arrow,
+    .right-arrow {
+        height: 125px;
+    }
+    .with-tabs .arrow-link {
+        margin: 55px auto;
+    }
+    #types-tabs .title {
+        width: auto;
+        font-size: 13px;
+    }
+    #types-tabs .item img {
+         height: 50px;
+         margin: 20px auto 10px;
+     }
+    /* Form */
+    #block-service-form .form .field-title {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 /* Small device */
 @media all and (max-width: 425px){

@@ -1,0 +1,89 @@
+/* Tablet */
+@media all and (max-width: 1000px){
+    /* Tarifs */
+    #options li {
+        float: none;
+        width: 100%;
+    }
+    #options li table {
+        width: 100%;
+    }
+    #options td.cell2 {
+        height: auto;
+        padding-top: 25px;
+    }
+    #options li table tr {
+        display: block;
+        float: left;
+    }
+    #options li table tr:first-child {
+        width: 25%;
+    }
+    #options li table tr:last-child {
+        width: 75%;
+    }
+
+}
+@media all and (max-width: 620px){
+    #columns-wrapper {
+        background-position: -115px 80px;
+    }
+    #why {
+        margin: 40px 0 0 0;
+    }
+    #why td {
+        display: block;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    #why tr:first-child td:first-child:after,
+    #why tr:first-child td:nth-child(3):after,
+    #why tr:first-child td:nth-child(5):after {
+        display: block;
+        margin-top: 30px;
+        width: 320px;
+    }
+    #why tr:first-child td:first-child:after {
+        content: 'Узнайте больше о Ваших предках и их происхождении';
+    }
+    #why tr:first-child td:nth-child(3):after {
+        content: 'Узнайте кто из знаменитостей Ваши родственники';
+    }
+    #why tr:first-child td:nth-child(5):after {
+        content: 'Откройте тайну: есть ли родственные связи у Вас с друзьями';
+    }
+    #why tr:last-child {
+        display: none;
+    }
+    #options li table tr {
+        display: table-row;
+        width: 100% !important;
+        float: none;
+        text-align: center;
+    }
+    /* Steps */
+    #steps tr {
+        float: left;
+        width: 50%;
+    }
+    #steps tr td {
+        display: inline-block;
+        width: 100%;
+        height: 65px;
+    }
+}
+@media all and (max-width: 768px){
+
+}
+/* Phablet */
+@media all and (max-width: 550px){
+
+}
+/* Small device */
+@media all and (max-width: 425px){
+
+}
+/* Extra small */
+@media all and (max-width: 375px){
+
+}

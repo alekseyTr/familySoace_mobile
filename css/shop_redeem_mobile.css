@@ -1,0 +1,21 @@
+/* Tablet */
+@media all and (max-width: 1000px){
+    #columns-wrapper {
+        width: 517px !important;
+    }
+}
+@media all and (max-width: 768px){
+
+}
+/* Phablet */
+@media all and (max-width: 550px){
+
+}
+/* Small device */
+@media all and (max-width: 425px){
+
+}
+/* Extra small */
+@media all and (max-width: 375px){
+
+}

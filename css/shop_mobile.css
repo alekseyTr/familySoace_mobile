@@ -3,7 +3,16 @@
     /* ==================================================================== */
     /* COMMON */
     /* ==================================================================== */
-
+    /* Header */
+    #header-area #panel-1 {
+        background-size: cover;
+    }
+    #header-area #panel-1 li.current {
+        background-color: #fff;
+    }
+    #header-area #panel-1 .current {
+        color: #000;
+    }
 
     /* ==================================================================== */
     /* MAIN */
@@ -93,7 +102,15 @@
     #column-content #cat-list li[class*="category-"] .serv-list li {
         width: 100%;
     }
-
+    #content-area #menu-tabs,
+    #content-area #menu-tabs .menu-item {
+        float: none;
+        width: 100%;
+        border-radius: 0;
+    }
+    #content-area #menu-tabs .menu-item.current {
+        background-color: rgb(140, 181, 19)
+    }
     /* ==================================================================== */
     /* CERTIFICATE */
     /* ==================================================================== */

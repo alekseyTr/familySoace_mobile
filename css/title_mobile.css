@@ -33,9 +33,13 @@
     #block-title-header-login .input-wrapper input {
         width: 100% !important;
     }
-    #header-area #block-title-socials,
+    #header-area #block-title-socials {
+        width: 23%;
+        text-align: center;
+        margin-left: 0 !important;
+    }
     #block-title-header-reg {
-        width: 24%;
+        width: 25%;
         text-align: center;
         margin-left: 0 !important;
     }
@@ -175,7 +179,7 @@
     /* ==================================================================== */
     /* Header area */
     #header-area .block:not(#block-sectors) {
-        width:  33% !important;
+        width:  32% !important;
     }
     #block-title-header-login .input-wrapper:not(#input-go) {
         display: none;
